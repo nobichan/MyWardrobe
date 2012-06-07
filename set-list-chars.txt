@@ -1,2 +1,0 @@
-" set list ‚µ‚½Žž‚Ì•\Ž¦‚Ì•û–@
-listchars=tab:>-,eol:$,trail:~,precedes:>,extends:<,nbsp:@

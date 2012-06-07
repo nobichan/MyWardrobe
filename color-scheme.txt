@@ -1,6 +1,0 @@
-" カラースキーマ
-colorscheme peachpuff
-
-" テキストがあるところとないところの背景色を変える
-highlight Normal guibg=peachpuff
-highlight NonText guibg=peachpuff
