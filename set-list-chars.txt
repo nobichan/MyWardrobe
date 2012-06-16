@@ -1,0 +1,3 @@
+" set list ‚Å•\Ž¦‚·‚é•¶Žš
+listchars=tab:>-,eol:$,trail:~,precedes:>,extends:<,nbsp:@
+
