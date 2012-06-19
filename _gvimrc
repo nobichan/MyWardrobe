@@ -1,0 +1,37 @@
+
+set nu
+
+set hlsearch
+
+syn on
+
+set gfn=ＭＳ_ゴシック:h16:cSHIFTJIS
+
+" カーソルは緑、IME ON時は紫
+highlight Cursor guibg=Green gui=NONE
+highlight CursorIM guibg=Purple gui=NONE
+
+" タブ表示領域常時表示
+set showtabline=2
+
+" ステータスライン常時表示
+set laststatus=2
+
+" 水平スクロールバー
+set guioptions+=b
+
+" ctrl+tab, ctrl+shift+tab でタブ切り替え
+nnoremap <C-Tab>   gt
+nnoremap <C-S-Tab> gT
+
+" ハードタブと行末のスペースを表示
+highlight SpecialKey ctermfg=blue guifg=#555555
+set listchars=tab:>\ ,trail:_
+set list
+
+" クリップボードを OS のクリップボードと共用にする
+set clipboard=unnamed
+
+" ステータスラインに文字コードと改行文字を表示する
+set statusline=%<%f\ %m%r%h%w\ \|%{(&fenc!=''?&fenc:&enc).'\|'.&ff.'\|'}%=%l,%c%V%8P
+	
