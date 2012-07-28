@@ -1,8 +1,8 @@
 MyWardrobe
 ==========
 
-vim �̂��낢��Ȑݒ��ۑ��B
-�q��Ƃ��s�������ɐݒ�ɍ���Ȃ��悤�ɁB�B�B
+vim のいろいろな設定を保存。
+客先とか行った時に設定に困らないように。。。
 
-Google Doc(Drive)�Ƃ��g���Ȃ��Ƃ��둽������B�B�B
+Google Doc(Drive)とか使えないところ多いから。。。
 
