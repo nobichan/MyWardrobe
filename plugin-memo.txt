@@ -1,10 +1,10 @@
-ƒvƒ‰ƒOƒCƒ“‚ÌƒCƒ“ƒXƒg[ƒ‹æ
-‚PD~/.vim
-‚QD$VIM/vimfiles
-‚RD
+ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«å…ˆ
+ï¼‘ï¼Ž~/.vim
+ï¼’ï¼Ž$VIM/vimfiles
+ï¼“ï¼Ž
 
-‚±‚Ì‰º‚ÉAdoc ‚Æ‚© plugin ‚Æ‚©ì‚Á‚Ä
-ƒCƒ“ƒXƒg[ƒ‹‚·‚éB
-‚à‚µ‚­‚Í‰ð“€‚µ‚½ƒfƒBƒŒƒNƒgƒŠ”z‰º‚Ì docAplugin “™‚ð
-ƒRƒs[‚·‚éB
+ã“ã®ä¸‹ã«ã€doc ã¨ã‹ plugin ã¨ã‹ä½œã£ã¦
+ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹ã€‚
+ã‚‚ã—ãã¯è§£å‡ã—ãŸãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªé…ä¸‹ã® docã€plugin ç­‰ã‚’
+ã‚³ãƒ”ãƒ¼ã™ã‚‹ã€‚
 
