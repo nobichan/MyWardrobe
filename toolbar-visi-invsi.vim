@@ -1,4 +1,4 @@
-" Ctrl+F2 ‚Åƒc[ƒ‹ƒo[‚Æƒƒjƒ…[ƒo[‚ðƒgƒOƒ‹
+" Ctrl+F2 ã§ãƒ„ãƒ¼ãƒ«ãƒãƒ¼ã¨ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒãƒ¼ã‚’ãƒˆã‚°ãƒ«
 map <silent> <C-F2> :if &guioptions =~# 'T' <Bar>
                          \set guioptions-=T <Bar>
                          \set guioptions-=m <bar>
@@ -9,7 +9,7 @@ map <silent> <C-F2> :if &guioptions =~# 'T' <Bar>
 
                     \endif<CR>
 
-" ƒƒjƒ…[ƒo[‚ð”ñ•\Ž¦
+" ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒãƒ¼ã‚’éžè¡¨ç¤º
 "set guioptions-=m
-" ƒc[ƒ‹ƒo[‚ð”ñ•\Ž¦
+" ãƒ„ãƒ¼ãƒ«ãƒãƒ¼ã‚’éžè¡¨ç¤º
 "set guioptions-=T

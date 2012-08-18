@@ -5,33 +5,33 @@ set hlsearch
 
 syn on
 
-set gfn=‚l‚r_ƒSƒVƒbƒN:h16:cSHIFTJIS
+set gfn=ï¼­ï¼³_ã‚´ã‚·ãƒƒã‚¯:h16:cSHIFTJIS
 
-" ƒJ[ƒ\ƒ‹‚Í—ÎAIME ON‚Í‡
+" ã‚«ãƒ¼ã‚½ãƒ«ã¯ç·‘ã€IME ONæ™‚ã¯ç´«
 highlight Cursor guibg=Green gui=NONE
 highlight CursorIM guibg=Purple gui=NONE
 
-" ƒ^ƒu•\¦—Ìˆæí•\¦
+" ã‚¿ãƒ–è¡¨ç¤ºé ˜åŸŸå¸¸æ™‚è¡¨ç¤º
 set showtabline=2
 
-" ƒXƒe[ƒ^ƒXƒ‰ƒCƒ“í•\¦
+" ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãƒ©ã‚¤ãƒ³å¸¸æ™‚è¡¨ç¤º
 set laststatus=2
 
-" …•½ƒXƒNƒ[ƒ‹ƒo[
+" æ°´å¹³ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ãƒãƒ¼
 set guioptions+=b
 
-" ctrl+tab, ctrl+shift+tab ‚Åƒ^ƒuØ‚è‘Ö‚¦
+" ctrl+tab, ctrl+shift+tab ã§ã‚¿ãƒ–åˆ‡ã‚Šæ›¿ãˆ
 nnoremap <C-Tab>   gt
 nnoremap <C-S-Tab> gT
 
-" ƒn[ƒhƒ^ƒu‚Æs––‚ÌƒXƒy[ƒX‚ğ•\¦
+" ãƒãƒ¼ãƒ‰ã‚¿ãƒ–ã¨è¡Œæœ«ã®ã‚¹ãƒšãƒ¼ã‚¹ã‚’è¡¨ç¤º
 highlight SpecialKey ctermfg=blue guifg=#555555
 set listchars=tab:>\ ,trail:_
 set list
 
-" ƒNƒŠƒbƒvƒ{[ƒh‚ğ OS ‚ÌƒNƒŠƒbƒvƒ{[ƒh‚Æ‹¤—p‚É‚·‚é
+" ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã‚’ OS ã®ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã¨å…±ç”¨ã«ã™ã‚‹
 set clipboard=unnamed
 
-" ƒXƒe[ƒ^ƒXƒ‰ƒCƒ“‚É•¶šƒR[ƒh‚Æ‰üs•¶š‚ğ•\¦‚·‚é
+" ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãƒ©ã‚¤ãƒ³ã«æ–‡å­—ã‚³ãƒ¼ãƒ‰ã¨æ”¹è¡Œæ–‡å­—ã‚’è¡¨ç¤ºã™ã‚‹
 set statusline=%<%f\ %m%r%h%w\ \|%{(&fenc!=''?&fenc:&enc).'\|'.&ff.'\|'}%=%l,%c%V%8P
 	
