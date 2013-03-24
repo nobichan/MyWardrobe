@@ -8,3 +8,16 @@
 もしくは解凍したディレクトリ配下の doc、plugin 等を
 コピーする。
 
+-------------------------------
+
+Project.vim
+
+perforce.vim
+
+global.vim
+
+vim-powerline
+
+statusline.vim
+
+
