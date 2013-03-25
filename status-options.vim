@@ -16,3 +16,9 @@ set statusline=%{CurTabColor()}\ %<%F%h%m%r%h%w%y\ \|%{(&fenc!=''?&fenc:&enc).'\
 " strftime() を少し整理 && 追加
 set statusline=%{CurTabColor()}\ %<%F%h%m%r%h%w%y\ \|%{(&fenc!=''?&fenc:&enc).'\|'.&ff.'\|'}\ %{strftime(\"%F\ (%a)\ (%V)\ %T\ %Z%z\")}%=\ l:%l\,%L\ c:%c%V\ ps:%o\ hex:%b\ %P
 
+fu! CurTabColor() 
+  let currentTab = tabpagenr() 
+  let s_line= '(tb=' . currentTab . ')' 
+  return s_line 
+endf
+
