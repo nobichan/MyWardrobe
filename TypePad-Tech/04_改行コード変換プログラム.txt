@@ -1,0 +1,23 @@
+改行コードを UNIX 形式から DOS 形式にする。
+入力は stdin、出力は stdout。
+
+$ cat addcr.c
+#include  #include
+main()
+{
+        char    str[1024];
+        char    *s;
+
+        memset(str, 0, sizeof str);
+        while ((s = fgets(str, 1024, stdin)) != NULL) {
+                str[strlen(str)-1] = '\0';
+                fputs(str, stdout);
+                fputc('\r', stdout);
+                fputc('\n', stdout);
+                memset(str, 0, sizeof str);
+        }
+        exit(0);
+}
+
+/*********************/
+$

@@ -1,0 +1,48 @@
+    u_int32_t       c;
+    for (c = 1; c <= 0x7f; c++)
+        printf("0x%x : %c\n", c, c);
+    exit(0);
+  }
+* for only us-ascii based coding.
+    u_int32_t       c;
+    while ((c = getchar()) != EOF) {
+        if (0x41 <= c && c <= 0x4D) /* A - M */
+            c += 13;
+        else if (0x4E <= c && c <= 0x5A) /* N - Z */
+            c -= 13;
+        else if (0x61 <= c && c <= 0x6D) /* a - m */
+            c += 13;
+        else if (0x6E <= c && c <= 0x7A) /* n - z */
+            c -= 13;
+        putchar(c);
+      }
+    }
+* for only us-ascii based coding.
+    if (0x41 <= c && c <= 0x4D) /* A - M */
+        c += 13;
+    else if (0x4E <= c && c <= 0x5A) /* N - Z */
+        c -= 13;
+    else if (0x61 <= c && c <= 0x6D) /* a - m */
+        c += 13;
+    else if (0x6E <= c && c <= 0x7A) /* n - z */
+        c -= 13;
+    return(c);
+  }
+    c &= 0x7F;
+    if (0x21 <= c && c <= 0x4F) /* ! - O */
+        c += 47;
+    else if (0x50 <= c && c <= 0x7E) /* P - ~ */
+        c -= 47;
+    c |= 0x80;
+    return(c);
+  }
+    u_int32_t       c;
+    while ((c = getchar()) != EOF) {
+        if (c >= 0x80)
+            c = rot47(c);
+        else
+            c = rot13(c);
+        putchar(c);
+    }
+    exit(0);
+  }

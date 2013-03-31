@@ -1,0 +1,14 @@
+同一行をカウントして数と内容を出力。のはず。
+---
+BEGIN   { count = 0; record = "" }
+{ if ($0 == record) {
+        count = count+1
+  } else if ($0 != record) {
+        print count+1, " ", record
+        count = 0
+        record = $0
+  } else {
+        print count+1, " ", record
+  }
+}
+END     { print count+1, " ", record }

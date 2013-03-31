@@ -1,0 +1,47 @@
+ループしたり足し算したりするスクリプトサンプル。
+
+$ cat erc.sh
+-------------------------------------------
+|YEAR=`cat erc_year`
+|PAD=0
+|MAN=`cat erc_man`
+|SEN=`cat erc_sen`
+|
+|for MONTH in `grep -v \# erc_month`
+|do
+|        j=0
+|        while :
+|        do
+|                j=`expr $j + 1`
+|                NUM=`printf "%03d"  $j`
+|                CASEID=${YEAR}${MONTH}${PAD}${MAN}${SEN}${NUM}
+|# wget http://wwwinside.tqa.bs1.fc.nec.co.jp/WebMENU/SEIHIN-after/PPSupport/syuukei/ERC_DISP_02.asp?ID=${CASEID}
+|echo "query = ERC_DISP_02.asp?ID="${CASEID}
+|mozilla -remote "openURL( http://wwwinside.tqa.bs1.fc.nec.co.jp/WebMENU/SEIHIN-after/PPSupport/syuukei/ERC_DISP_02.asp?ID=${CASEID},new-tab)" &
+|                if [ $j == 999 ]
+|                then
+|                        exit 
+|                fi
+|sleep 3
+|        done
+|done
+$ cat erc_man
+3
+$ cat erc_month
+#01
+#02
+03
+#04
+#05
+#06
+#07
+#08
+#09
+#10
+#11
+#12
+$ cat erc_sen
+8
+$ cat erc_year 
+06
+$

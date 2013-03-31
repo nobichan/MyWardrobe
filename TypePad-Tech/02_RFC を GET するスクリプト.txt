@@ -1,0 +1,61 @@
+ダウンロード後の和訳はガムバレ！
+
+$ sh rfcget.sh
+$ sh mkindex.sh
+
+
+$ cat mkindex.sh
+-----------------------------
+|  awk -f ./join.awk ./rfc-index.txt > rfc-index.join.txt
+|  awk -f ./mkindex.awk ./rfc- index.join.txt
+> rfc-index.html
+
+$ cat rfcget.sh
+----------------------------------
+|#!/bin/bash
+|
+|ftp_proxy=$http_proxy
+|export ftp_proxy
+|
+|wget -c ftp://ftp.rfc-editor.org/in-notes/tar/RFC-all.tar.gz
+|mv RFC-all.tar.gz RFC-all-`date +%Y%m%d`.tar.gz
+|tar zxvf RFC-all-`date +%Y%m%d`.tar.gz
+
+$ cat join.awk
+----------------------------------
+|BEGIN   { flag = 0; } 
+|
+|/^[0-9]/        {
+|                  flag = 1;
+|                  printf "%s", $0;
+|                  next;
+|                }
+|/^$/            { printf "\n";
+|                  next; 
+|                }
+|                {
+|                  if (flag == 1) {
+|                    printf "%s", $0;
+|                  }
+|                }
+
+$ cat mkindex.awk
+----------------------------------- 
+|BEGIN   {
+|          flag = 0;
+|          printf "<html><head>RFC INDEX</head><body>\n";
+|          printf "<table border=1>\n"
+|          printf "<tr><th>No.</th><th>Title</th></tr>\n" 
+|        }
+|
+|/^[0-9]/        {
+|                  flag = 1;
+|                  printf "<tr><td><a href=\"./rfc%d.txt\">%s</a></td><td>%s<br>\n", $1, $1, $0; 
+|                  next;
+|                }
+|END     {
+|          printf "</table>\n"
+|          printf "</body></html>\n";
+|        }
+
+$

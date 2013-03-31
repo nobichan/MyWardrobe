@@ -1,0 +1,80 @@
+make rot13 とかだけでメイク可能。
+入力は stdin、出力は stdout。
+rot47 の方のコメントが若干嘘。
+$ cat rot13.c
+/*
+* for only us-ascii based coding.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+
+main()
+{
+&nbsp;  u_int32_t       c;
+
+        while ((c = getchar()) != EOF) {
+                if (0x41 <= c && c <= 0x4D) /* A - M */
+                        c += 13;
+                else if (0x4E <= c && c <= 0x5A) /* N - Z */
+                        c -= 13;
+                else if (0x61 <= c && c <= 0x6D) /* a - m */
+                        c += 13;
+                else if (0x6E <= c && c <= 0x7A) /* n - z */
+                        c -= 13;
+                putchar(c);
+        }
+}
+
+$ cat rot47.c
+/*
+* for only us-ascii based coding.
+*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+
+u_int32_t
+rot13(u_int32_t c)
+{
+        if (0x41 <= c && c <= 0x4D) /* A - M */
+                c += 13;
+        else if (0x4E <= c && c <= 0x5A) /* N - Z */
+                c -= 13;
+        else if (0x61 <= c && c <= 0x6D) /* a - m */
+                c += 13;
+        else if (0x6E <= c && c <= 0x7A) /* n - z */
+                c -= 13;
+        return(c);
+}
+
+u_int32_t
+rot47(u_int32_t c)
+{
+        c &= 0x7F;
+        if (0x21 <= c && c <= 0x4F) /* ! - O */
+                c += 47;
+        else if (0x50 <= c && c <= 0x7E) /* P - ~ */
+                c -= 47;
+        c |= 0x80;
+        return(c);
+}
+
+main()
+{
+        u_int32_t       c;
+
+        while ((c = getchar()) != EOF) {
+                if (c >= 0x80)
+                        c = rot47(c);
+                else
+                        c = rot13(c);
+                putchar(c);
+        }
+
+        exit(0);
+}
+
+$
+
+

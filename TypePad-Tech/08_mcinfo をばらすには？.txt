@@ -1,0 +1,9 @@
+こんなのどうでしょう？
+
+$ cat split.awk
+/^=== mcinfo:/  { title = $3; gsub("/", "Z", title); print title }
+/^=== mcinfo :/ { title = $4; gsub("/", "Z", title); print title }
+                { print >> title }
+$
+
+
