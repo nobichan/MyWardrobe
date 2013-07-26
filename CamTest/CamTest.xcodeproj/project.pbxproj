@@ -12,6 +12,7 @@
 		CE068FBF179C12EE00F7A74C /* libopencv_core.2.4.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE068FBE179C12EE00F7A74C /* libopencv_core.2.4.6.dylib */; };
 		CE068FC1179C132200F7A74C /* libopencv_highgui.2.4.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE068FC0179C132200F7A74C /* libopencv_highgui.2.4.6.dylib */; };
 		CE068FC3179C133400F7A74C /* libopencv_imgproc.2.4.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE068FC2179C133400F7A74C /* libopencv_imgproc.2.4.6.dylib */; };
+		CE5C23F517A2811E009A23F1 /* libopencv_objdetect.2.4.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5C23F417A2811E009A23F1 /* libopencv_objdetect.2.4.6.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,7 @@
 		CE068FBE179C12EE00F7A74C /* libopencv_core.2.4.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.2.4.6.dylib; path = ../../../../opt/local/lib/libopencv_core.2.4.6.dylib; sourceTree = "<group>"; };
 		CE068FC0179C132200F7A74C /* libopencv_highgui.2.4.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.2.4.6.dylib; path = ../../../../opt/local/lib/libopencv_highgui.2.4.6.dylib; sourceTree = "<group>"; };
 		CE068FC2179C133400F7A74C /* libopencv_imgproc.2.4.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.2.4.6.dylib; path = ../../../../opt/local/lib/libopencv_imgproc.2.4.6.dylib; sourceTree = "<group>"; };
+		CE5C23F417A2811E009A23F1 /* libopencv_objdetect.2.4.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_objdetect.2.4.6.dylib; path = ../../../../opt/local/lib/libopencv_objdetect.2.4.6.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5C23F517A2811E009A23F1 /* libopencv_objdetect.2.4.6.dylib in Frameworks */,
 				CE068FC3179C133400F7A74C /* libopencv_imgproc.2.4.6.dylib in Frameworks */,
 				CE068FC1179C132200F7A74C /* libopencv_highgui.2.4.6.dylib in Frameworks */,
 				CE068FBF179C12EE00F7A74C /* libopencv_core.2.4.6.dylib in Frameworks */,
@@ -53,6 +56,7 @@
 		CE068FA9179C10FC00F7A74C = {
 			isa = PBXGroup;
 			children = (
+				CE5C23F417A2811E009A23F1 /* libopencv_objdetect.2.4.6.dylib */,
 				CE068FC2179C133400F7A74C /* libopencv_imgproc.2.4.6.dylib */,
 				CE068FC0179C132200F7A74C /* libopencv_highgui.2.4.6.dylib */,
 				CE068FBE179C12EE00F7A74C /* libopencv_core.2.4.6.dylib */,
@@ -232,6 +236,7 @@
 				CE068FBD179C10FD00F7A74C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
