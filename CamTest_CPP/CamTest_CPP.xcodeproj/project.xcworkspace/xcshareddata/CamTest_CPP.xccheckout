@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2B8B1F97-B4CA-43A0-939B-3FF6372BB3C7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CamTest_CPP</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C2971B68-1400-4022-8792-FA6198FC39F2</key>
+		<string>https://github.com/nobichan/MyWardrobe.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CamTest_CPP/CamTest_CPP.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C2971B68-1400-4022-8792-FA6198FC39F2</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/nobichan/MyWardrobe.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C2971B68-1400-4022-8792-FA6198FC39F2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C2971B68-1400-4022-8792-FA6198FC39F2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MyWardrobe</string>
+		</dict>
+	</array>
+</dict>
+</plist>
