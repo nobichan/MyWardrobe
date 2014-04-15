@@ -4,3 +4,13 @@ set expandtab
 set noexpandtab
 " とすると変換しない
 
+" .vimrc で↓こんな風にしておくと、:Expand とかするだけで
+" スペースに変換できる
+function! s:Expand()
+    :set expandtab
+    :%retab!
+    :set noexpandtab
+endfunction
+
+command! -nargs=0 Expand call s:Expand()
+
