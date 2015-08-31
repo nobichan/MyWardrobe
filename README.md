@@ -6,6 +6,3 @@ vim のいろいろな設定を保存。
 
 Google Doc(Drive)とか使えないところ多いから。。。
 
-```
-$ caesar < encoded.txt > decoded.txt
-```
