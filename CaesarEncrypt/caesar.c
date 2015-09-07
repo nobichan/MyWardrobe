@@ -47,12 +47,11 @@ main(int argc, char *argv[])
 		}
 	}
 	else if (conv == ENC) {
-		int a = atoi(argv[2]);
-		if (a >= 0) {
-			printf("+%d ", a);
+		if (shift >= 0) {
+			printf("+%d ", shift);
 		}
 		else {
-			printf("%d ", a);
+			printf("%d ", shift);
 		}
 		while ((c = getchar()) != EOF) {
 			if (('A' <= c && c <= 'Z') ||
